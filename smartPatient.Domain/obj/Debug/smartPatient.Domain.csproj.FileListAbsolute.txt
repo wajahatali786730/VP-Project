@@ -1,0 +1,5 @@
+C:\Users\A\source\repos\wajahatali786730\VP-Project\smartPatient.Domain\bin\Debug\smartPatient.Domain.dll
+C:\Users\A\source\repos\wajahatali786730\VP-Project\smartPatient.Domain\bin\Debug\smartPatient.Domain.pdb
+C:\Users\A\source\repos\wajahatali786730\VP-Project\smartPatient.Domain\obj\Debug\smartPatient.Domain.csprojAssemblyReference.cache
+C:\Users\A\source\repos\wajahatali786730\VP-Project\smartPatient.Domain\obj\Debug\smartPatient.Domain.dll
+C:\Users\A\source\repos\wajahatali786730\VP-Project\smartPatient.Domain\obj\Debug\smartPatient.Domain.pdb

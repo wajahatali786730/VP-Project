@@ -1,0 +1,98 @@
+﻿@model IEnumerable<patient.webUI.Models.Table>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<body style="background-color:#E6E6FA">
+
+
+
+<head>
+
+
+    <style>
+        .button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+@*<p>
+    @Html.ActionLink("Create New", "Create")
+</p>*@
+@*<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Speciality)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Description)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Fee)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Availibility)
+        </th>
+        <th></th>
+    </tr>*@
+
+@foreach (var p in Model)
+{
+    @*<tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Speciality)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Fee)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Availibility)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+                @Html.ActionLink("Details", "Details", new { id = item.Id }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+            </td>
+        </tr>*@
+
+
+
+<div>
+    <h3>@p.Name</h3>
+    <h4>@p.Speciality</h4>
+    <h4>fee : @p.Fee.ToString("c")</h4>
+
+    <h5>Experience  @p.Description</h5>
+
+    @*@Html.ActionLink("Create New", "Create")*@
+    <a href="Create" class="button">Book Appointment</a>
+    @Html.ActionLink("Edit", "Edit", new { id = p.Id }) |
+    @Html.ActionLink("Details", "Details", new { id = p.Id }) |
+    @Html.ActionLink("Delete", "Delete", new { id = p.Id })
+    <br />
+    <br />
+</div>
+}
+
+
+@*</table>*@
